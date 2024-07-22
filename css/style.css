@@ -1,0 +1,468 @@
+*{
+    margin: 0;
+    padding:  0px;
+    box-sizing: border-box
+}
+body{
+    font-family:'Alegreya Sans', sans-serif; 
+}
+.container{
+width: 90%;
+margin: auto;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+.clr{
+    clear: both;
+}
+.style{
+    
+    text-align:center ;
+    font-size: 30px;
+    font-weight: bolder;
+    padding-top: 30px;
+    position: relative;
+    margin-bottom: 20px;
+    padding-bottom: 9px;
+   
+}
+.style::after{
+    content: '';
+    width: 150px;
+    height: 1px;
+    background-color: #ff305b;
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform:translatex(-50%);
+    
+    }
+    .style::before{
+        content: '';
+        position: absolute;
+        height: 11px;
+        width: 80px;
+        border-top: 1px solid #ff305b;
+        border-bottom: 1px solid #ff305b;
+        bottom: -16px;
+        transform:translatex(-50%);
+        left: 50%
+        
+    
+    }
+/* -------------------------------------------star home------------- -----------------*/
+.home{
+background-image: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)),url(../images/hero\ img.jpg);
+background-position: center center;
+background-size: cover;
+height: 100vh;
+color: white;
+position: relative;
+}
+.home-con{
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50% ,-50%);
+text-align: center;
+}
+.home .home-con h1{
+font-size: 70px;
+color: #ff305b;
+font-weight: 600;
+}
+.home .home-con h3{
+    font-size: 24px;
+    font-weight: 600;
+}
+.home .home-con h4{
+    font-size: 26px;
+  font-weight: 200;
+}
+.nav-icon{
+   float: right;
+   display: none;
+}
+.logo{
+    color: #ff305b;
+    float: left;
+    padding: 10px 
+}
+.links ul{
+   
+    float: right;
+    width: 60%;
+}
+.links ul li{
+    float: left;
+    padding: 15px ;
+    translate: color 0.5s;
+}
+.links ul li :hover{
+color: #ff305b;
+}
+
+/* ----------------------------end home---------------------------- */
+
+
+/* ---------------------star about----------------------- */
+.about{
+    margin-top: 50px;
+    
+}
+.about-img{
+ margin-left: 5%;
+    width: 30%;
+    float: left;
+}
+
+
+.about-con{
+   
+   width: 60%;
+    float: left;
+   margin-left:5%;
+
+}
+.about-img .border{
+   border: 8px solid #444;
+   border-radius: 7px;
+}
+ .img img{
+   width: 100%;
+}
+ .border .img{
+    position: relative;
+    top: 20px;
+    left: 20px;
+    overflow: hidden;
+   
+ 
+}
+.border .img .layer{
+    position: absolute;
+    left: 0;
+  width: 100%;
+  height: 100%;
+    top: 100%;
+    transition: .5s top;
+    background-color:rgba(0,0,0,0.6) ;
+}
+.border .img .layer .icons{
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50% ,-50%);
+}
+
+.border .img .layer .icons i:hover{
+    color: #ff305b;
+}
+.border .img .layer .icons i{
+    padding: 9px;
+}
+
+.border .img:hover .layer{
+    top: 0;
+}
+
+
+.about-con h2{
+ padding-bottom: 30px;
+ font-size: 30px;
+ 
+}
+.about-con p{
+    color: #686868;
+    margin-bottom: 15px;
+    border-bottom:#686868 dashed 1px;
+    padding-bottom: 30px;
+}
+.about-con ul li{
+    width:50% ;
+    float: left;
+    padding-bottom: 8px;
+    margin-top: 20px;
+    color: #686868;
+}
+.about-con ul li span {
+color: black;
+    font-weight: bolder;
+}
+ .about-con button{
+    padding: 10px 40px;
+      background-color: #ff305b;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      transition: .5s;
+      margin-top: 15px;
+      margin-left: 40px;
+      
+     
+}
+.about-con button:hover{
+     background-color: #EC2403;
+}
+.about-con button i{
+    padding: 3px;
+    margin-left: 3px;
+
+}
+
+
+/* --------------------end about------------------------ */
+
+
+
+
+/* ------------------star servs -------------------*/
+.serv-itm{
+    padding-left: 50px;
+    padding-top: 20px;
+}
+.serv{
+    
+   margin-top: 50px;
+   padding-top: 50px;
+   background-color:#eee;
+ 
+    
+}
+
+
+.serv-itm{
+    text-align: center;
+    float: left;
+    width: 25%;
+    transition: .5s background-color ;
+    padding: 50px;
+    margin-top: 20px;
+   
+}
+.serv-itm h3{
+    margin: 24px 0px;
+   
+
+}
+.serv-itm:hover{
+    background-color: white;
+ 
+}
+
+/* ------------------end servs --------------------------*/
+
+
+/* ------------------star portfoil------------- */
+.port ul{
+ 
+   width: 47%;
+   margin: 0 auto;
+   
+
+}
+.port ul li{
+    float: left;
+    text-align: center;
+    width: 20%;
+    padding-top: 33px;
+  
+}
+.gallery{
+    margin-top: 50px;
+  
+}
+
+.img-g{
+    width: 33.333%;
+    float: left;
+padding: 20px;
+
+
+}
+.img-g img {
+    width: 100%;
+  
+}
+.img-g .inner-img{
+    position: relative;
+}
+.img-g .inner-img .laye{
+position: absolute;
+
+background-color:rgba(0,0,0,0.6) ;
+opacity: 0;
+transition: 1s ;
+
+}
+.img-g .inner-img:hover .laye{
+opacity: 1;
+}
+/* ------------------end portfoil------------- */
+
+
+
+/* -----------------star feedback--------- */
+.feedback-itme{
+background-color: #eee;
+width: 65%;
+margin: 40px auto;
+padding: 40px;
+padding-left:20px ;
+border-radius: 7px;
+position: relative;
+padding-top: 50px;
+}
+.itme-img{
+float: left;
+width: 15%;
+text-align: right;
+padding: 20px;
+position: relative;
+z-index: 1;
+
+}
+.itme-img img{
+    border-radius: 50%;
+    width: 100px;
+ 
+}
+.con{
+
+float: right;
+width: 80%;
+}
+.con h3{
+    font-size: 30px;
+    font-weight: bolder;
+    margin-bottom: 10px;
+}
+.con p{
+    color: #686868;
+    margin-bottom: 10px;
+}
+.con h5{
+    color:#686868;
+    margin-bottom: 10px;
+}
+.con .border{
+    border: 100px solid red;
+    position: absolute;
+    border-color: #ff305b transparent transparent #ff305b;
+    top: 0;
+    left: 0;
+}
+
+
+.blog{
+    background-color: #f1f1f1;
+    
+  
+}
+
+.blog_items .blog_item{
+    width: 33.333%;
+    float: left;
+    padding: 0px 20px;
+
+}
+
+.blog_items .blog_item img{
+    width: 100%;
+}
+.blog_item_inner {
+    background-color: white;
+  
+  
+}
+.youtube{
+    aspect-ratio: 16/9;
+}
+.blog_item{
+    padding: 20px;
+    margin-bottom: 50px;
+   
+}
+.blog-cone{
+padding: 10%;
+}
+.blog-cone h3{
+   padding-top:10px ;
+   padding-bottom: 10px;
+}
+.blog-cone p{
+    padding-bottom: 8px;
+    line-height: 1.6;
+}
+.blog_items{
+    padding-top: 30px;
+}
+
+
+
+form{
+   
+    width: 90%;
+    max-width: 600px;
+   
+}
+
+
+.form h2{
+    margin-bottom: 50px;
+}
+.form{
+    display: flex;
+align-items: center;
+justify-content: center;
+width: 100%;
+
+
+}
+.form-con{
+    margin-bottom: 30px;
+
+}
+.form-con input{
+    width: 100%;
+    border: 3px solid #eee;
+    padding: 10px;
+    font-size: 15px;
+    border-radius: 6px;
+   
+}
+
+.form-con textarea{
+    width: 630px;
+    height: 90px;
+    border-radius: 6px;
+    border: 3px solid #eee;
+}
+.row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+
+}
+.form button{
+    padding: 10px 20px;
+      background-color: #ff305b;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      transition: .5s;
+}
+.form button:hover{
+    background-color: #EC2403;
+}
+.row input{
+    width: 300px;
+
+    
+}
